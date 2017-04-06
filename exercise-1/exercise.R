@@ -31,8 +31,8 @@ top <- meals[1:2]
 total <- lapply(meals, length)
 
 # Write a function that adds pizza to every meal
-Add.Pizza <- function(x) {
-  lapply(meals, paste, "pizza")
+Add.Pizza <- function(meals) {
+  return(c(meals, "pizza"))
 }
 
 # Add pizza to every meal!
